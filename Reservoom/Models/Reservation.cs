@@ -18,6 +18,7 @@ namespace Reservoom.Models
         public Reservation(RoomID roomID, string userName, DateTime startTime, DateTime endTime)
             {
             RoomID = roomID;
+            UserName = userName;
             StartTime = startTime;
             EndTime = endTime;
             }

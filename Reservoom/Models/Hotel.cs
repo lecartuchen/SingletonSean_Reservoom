@@ -31,6 +31,7 @@ namespace Reservoom.Models
         /// Make a reservation.
         /// </summary>
         /// <param name="reservation"></param>
+        /// <exception cref="ReservationConflictException"></exception>
         public void MakeReservation(Reservation reservation)
             {
             _reservationBook.AddReservation(reservation);
